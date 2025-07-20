@@ -1,99 +1,103 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+## Features
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Project setup
-
-```bash
-$ npm install
-```
-
-## Compile and run the project
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Run tests
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
-
-## Resources
-
-Check out a few resources that may come in handy when working with NestJS:
-
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+1. Quản lý User & Authentication
+   Đăng ký tài khoản (register)
+   Đăng nhập (login) (PASSPORTJS)
+   Đăng xuất (logout)
+   Quên mật khẩu / Reset mật khẩu
+   Cập nhật thông tin cá nhân
+   Xem thông tin profile
+   Phân quyền (admin/customer)
+2. Quản lý Address (Địa chỉ)
+   Thêm địa chỉ mới
+   Xem danh sách địa chỉ
+   Cập nhật địa chỉ
+   Xóa địa chỉ
+   Đặt địa chỉ mặc định
+   Lấy tọa độ địa chỉ
+   Tính phí ship dựa theo khoảng cách địa lý và khối lượng sản phẩm
+3. Quản lý Category (Danh mục)
+   Xem danh sách danh mục
+   Thêm danh mục mới (admin)
+   Cập nhật danh mục (admin)
+   Xóa danh mục (admin)
+   Sắp xếp danh mục theo thứ tự
+4. Quản lý Product (Sản phẩm)
+   Xem danh sách sản phẩm
+   Xem chi tiết sản phẩm
+   Tìm kiếm sản phẩm
+   Lọc sản phẩm theo danh mục
+   Thêm sản phẩm mới (admin)
+   Cập nhật sản phẩm (admin)
+   Xóa sản phẩm (admin)
+   Quản lý sản phẩm nổi bật
+5. Quản lý Product Variant (Biến thể sản phẩm)
+   Xem các size/loại của sản phẩm
+   Thêm biến thể mới (admin)
+   Cập nhật biến thể (admin)
+   Xóa biến thể (admin)
+   Tính giá cuối cùng của biến thể
+6. Quản lý Ingredient (Nguyên liệu/Topping)
+   Xem danh sách nguyên liệu
+   Thêm nguyên liệu mới (admin)
+   Cập nhật nguyên liệu (admin)
+   Xóa nguyên liệu (admin)
+   Quản lý nguyên liệu bắt buộc
+7. Quản lý Cart (Giỏ hàng)
+   Xem giỏ hàng
+   Thêm sản phẩm vào giỏ
+   Cập nhật số lượng sản phẩm
+   Xóa sản phẩm khỏi giỏ
+   Thêm/xóa topping cho sản phẩm
+   Tính tổng tiền giỏ hàng
+   Xóa toàn bộ giỏ hàng
+   Xây dựng giỏ hàng cho cả người chưa đăng nhập và đã đăng nhập
+   Đồng bộ giỏ hàng khi người dùng đăng nhập
+8. Quản lý Order (Đơn hàng)
+   Tạo đơn hàng mới
+   Xem danh sách đơn hàng
+   Xem chi tiết đơn hàng
+   Cập nhật trạng thái đơn hàng (admin)
+   Hủy đơn hàng
+   Theo dõi đơn hàng
+   Lịch sử đơn hàng
+9. Quản lý Payment (Thanh toán)
+   Xử lý thanh toán COD
+   Xử lý thanh toán online (VNPAY)
+   Cập nhật trạng thái thanh toán
+   Hoàn tiền (admin)
+10. Quản lý Coupon (Mã giảm giá)
+    Xem danh sách mã giảm giá
+    Tạo mã giảm giá mới (admin)
+    Cập nhật mã giảm giá (admin)
+    Xóa mã giảm giá (admin)
+    Áp dụng mã giảm giá
+    Kiểm tra tính hợp lệ của mã
+    Tính toán giá trị giảm giá
+11. Quản lý User Coupon (Mã giảm giá của user)
+    Lấy mã giảm giá cho user
+    Xem danh sách mã đã có
+    Sử dụng mã giảm giá
+    Lịch sử sử dụng mã
+12. Quản lý Review (Đánh giá)
+    Xem đánh giá sản phẩm
+    Thêm đánh giá mới
+    Cập nhật đánh giá
+    Xóa đánh giá (admin)
+    Tính điểm trung bình sản phẩm
+13. Dashboard & Analytics (Admin)
+    Thống kê doanh thu
+    Báo cáo đơn hàng
+    Thống kê sản phẩm bán chạy
+    Quản lý khách hàng
+    Báo cáo tổng quan hệ thống
+14. Notification (Thông báo)
+    Gửi thông báo trạng thái đơn hàng
+    Thông báo khuyến mãi
+    Thông báo hệ thống
+15. Search & Filter (Tìm kiếm & Lọc)
+    Tìm kiếm sản phẩm theo tên
+    Lọc theo danh mục
+    Lọc theo giá
+    Lọc theo đánh giá
+    Sắp xếp kết quả
